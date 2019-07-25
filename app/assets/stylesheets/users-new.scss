@@ -10,17 +10,16 @@
   font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
   height: 789px;
   .box-main{
-    margin: 0;
-    // padding: 0 0 100px;
+    padding: 0 0 100px;
     &__header{
       height: 128px;
-      .box-main-icon{
-        width: 185px;
-        height: 49px;
-        line-height: 49px;
-        margin: 0 auto;
-        padding: 40px;
-      }
+        .box-main-icon{
+          width: 185px;
+          height: 49px;
+          line-height: 49px;
+          margin: 0 auto;
+          padding-top: 40px;
+        }
     }
     &__center{
       display: block;
