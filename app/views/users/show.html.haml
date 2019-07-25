@@ -27,7 +27,7 @@
         .tab-content
           %ul.tab-news.tab-tab
             %li
-              = link_to root_path, class: "content-link" do
+              = link_to "", class: "content-link" do
                 %figure
                   = image_tag "mercari_profile.png", class: "mercari1"
                 .item-content
@@ -40,7 +40,7 @@
                   = fa_icon "angle-right", class: "angle-icon"
 
             %li
-              = link_to root_path, class: "content-link" do
+              = link_to "", class: "content-link" do
                 %figure
                   = image_tag "mercari_profile.png", class: "mercari1"
                 .item-content
@@ -53,7 +53,7 @@
                   .right-icon
                     = fa_icon "angle-right", class: "angle-icon"
             %li.mypage-more-info
-              = link_to root_path do
+              = link_to "" do
                 一覧を見る
 
         %section.mypage-transaction
@@ -71,4 +71,4 @@
               %ul.transaction-content__ul
                 %li.transaction-content__ul__text
                   取引中の商品はありません
-= render 'side-bar'
+  = render 'side-bar'
