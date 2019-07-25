@@ -1,0 +1,143 @@
+.banner{
+  background-image: url("download_bg_pc.jpg");
+  background-position: center;
+  background-size: cover;
+
+    &__pc{
+    overflow: hidden;
+    position: relative;
+    width: 750px;
+    height: 260px;
+    margin: 0 auto;
+    color: #fff;
+      &__left{
+      position: absolute;
+      top: 50%;
+      color: #fff;
+      transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+        &__font{
+          font-size: 24px;
+          margin: 0;
+          text-shadow: 0 0 5px rgba(0,0,0,0.4);
+        }
+        &__font2{
+          font-size: 35px;
+          text-shadow: 0 0 5px rgba(0,0,0,0.4);
+        }
+      
+        &__main{
+          margin: 20px 0 0;
+          height: 68px;
+          &__box{
+          float: left;
+          @include clearfix;
+          img{
+            width: 68px;
+            height: 68px;
+          }
+         }
+          &__box2{
+          @include clearfix;
+          margin: 14px 0 14px 24px;
+          float: left;
+          line-height: 68px;
+        }
+     }
+  }
+      &__right{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 300px;
+      height: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.footer{
+  padding: 20px 20px 10px 20px;
+  background: #212121;
+  color: #fff;
+  display: block;
+    &__top{
+      width: 1020px;
+      margin: 0 auto;
+      &__cell{
+      display: flex;
+      &__merukari{
+      color: #fff;
+      font-size: 16px;
+      font-weight: 100;
+      padding: 0 20px 0 0;
+      width: 20%;
+        &__font{
+          font-size: 12px;
+          margin: 14px 0 0;
+          opacity:0.5;
+        }
+        &__icon{
+          display: inline-block;
+          margin: 14px 0 0;
+          font-size: 30px;
+        }
+      }
+      &__help{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 0 20px 0 0;
+        &__font{
+          font-size: 12px;
+          margin: 14px 0 0;
+          opacity:0.5;
+        }
+      }
+      &__rule{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 0 20px 0 0;
+        &__font{
+          font-size: 12px;
+          margin: 14px 0 0;
+          opacity:0.5;
+        }
+      }
+      &__rule2{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 20px 0 0;
+        &__font{
+        font-size: 12px;
+        margin: 14px 0 0;
+        opacity:0.5;
+        }
+      }
+      &__country{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 0 20px 0 ;
+        &__font{
+          font-size: 12px;
+          margin: 14px 0 0;
+          opacity:0.5;
+        }
+      }
+    }
+  }
+  &__bottom{
+  margin: 30px auto 20px;
+  width: 1020px;
+    &__text{
+      font-size: 8px;
+      text-align: center;
+    }
+  }
+}

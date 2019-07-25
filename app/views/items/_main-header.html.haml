@@ -1,0 +1,22 @@
+.top-heder
+  .top-heder__inner
+    .top-heder__inner__box
+      .top-heder__inner__box__merukari
+        = link_to do
+          = image_tag 'logo.svg'
+      .top-heder__inner__box__form
+        %input{placeholder:'何かお探しですか？', type:'search', class:'fa fa-search'} 
+        = fa_icon 'search', class:'icon1'  
+    .top-heder__inner__link
+      %ul.top-heder__inner__link__left
+        %li.top-heder__link__inner__left__kate
+          = fa_icon 'list-ul'
+          カテゴリーから探す
+        %li.top-heder__link__inner__left__burando
+          = fa_icon 'tags'
+          ブランドから探す
+      %ul.top-heder__inner__link__right
+        %li.top-heder__inner__link__right__new
+          新規会員登録
+        %li.top-heder__inner__link__right__rog
+          ログイン 
