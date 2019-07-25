@@ -1,0 +1,47 @@
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+}
+  .mypage-side {
+    float: left;
+    width: 280px;
+    margin: 0 50px 0 0;
+    .mypage-menu {
+      &__list {
+        li {
+          border-top: 1px solid #eee;
+          list-style: none;
+          box-sizing: border-box;//page全体
+          &:first-child {
+            border: 0;
+          }
+          .mypage-menu__list__item {
+            position: relative;
+            display: block;
+            min-height: 48px;
+            padding: 26px;
+            background: #fff;
+            color: #333;
+            text-decoration:none;
+            .angle-icon {
+              position: absolute;
+              top: 50%;
+              right: 16px;
+              color: #ccc;
+              transform: translate(0, -50%);
+              transition: all ease-out .2s;
+              font-size: 30px;
+              }
+            }
+          }
+        }
+      &__text {
+        margin: 40px 0 0;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 0 0 40px;
+        &__list {
+          margin: 8px 0 0;
+        }
+      }
+    }
+  }
