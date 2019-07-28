@@ -10,20 +10,20 @@
         = link_to '',class:"header-next__next__list__link__action" do
           %span
           マイページ
-  %main.mypage
+  %main.mypage.clearfix
     = render 'side-bar'
     .right-side
       %section.mypage-user
         = link_to '',class: "mypage-user__link" do
-          %figure
+          %figure.mypage-user__link__image
             = image_tag "member_photo.png", width: "60", height: "60"
           %h2.mypage-user__link__name
             = 'MIZUNO'
-          .mypage-user__link__number
-            .mypage-user__link__number__evaluation 評価
-            %span.mypage-user__link__number__number2 1
-            .mypage-user__link__number__number-of-listings 出品数
-            %span.mypage-user__link__number__number3 3
+          .mypage-number
+            .mypage-number__evaluation 評価
+            %span.mypage-number__number2 1
+            .mypage-number__listings 出品数
+            %span.mypage-number__number3 3
 
 
       %section.mypage-tab
