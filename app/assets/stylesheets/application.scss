@@ -1,5 +1,6 @@
 @import "config/reset";
 @import "mixin/clearfix";
+@import "mixin/sub-header";
 @import "mixin/sub-footer";
 @import "font-awesome";
 @import "mercari/share";
@@ -17,5 +18,4 @@
 @import "users-logout";
 @import "users-pay";
 @import "users-done";
-@import "mixin/sub-header";
 @import "mypage-profile.scss";
