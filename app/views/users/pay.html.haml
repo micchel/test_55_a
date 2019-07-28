@@ -1,0 +1,55 @@
+.pay-body
+  .pay-body__header
+    = render "items/sub-header"
+  .pay-body__center
+    .pay-body__center__upper
+      %h2.pay-body__center__upper__way 支払い方法
+      .pay-body__center__under
+        .pay-body__center__under__main
+          .pay-body__center__under__main__form
+            %label.pay-body__center__under__main__form__label カード番号
+            %span.pay-body__center__under__main__form__required 必須
+            %input.pay-body__center__under__main__form__text{:placeholder => "半角数字のみ"}
+            .pay-body__center__under__main__form__card-icon
+              %li.pay-body__center__under__main__form__card-icon__i__f
+                = image_tag 'visa.svg', alt:'visa', width:'49', height:'20'
+              %li.pay-body__center__under__main__form__card-icon__i
+                = image_tag 'master-card.svg',alt:'master-card', width:'34', height:'20'
+              %li.pay-body__center__under__main__form__card-icon__i
+                = image_tag 'saison-card.svg',alt:'saison-card', width:'30', height:'20'
+              %li.pay-body__center__under__main__form__card-icon__i
+                = image_tag 'jcb.svg',alt:'jcb', width:'32', height:'20'
+              %li.pay-body__center__under__main__form__card-icon__i
+                = image_tag 'american_express.svg',alt:'american_express', width:'21', height:'20'
+              %li.pay-body__center__under__main__form__card-icon__i
+                = image_tag 'dinersclub.svg',alt:'dinersclub', width:'32', height:'20'
+              %li.pay-body__center__under__main__form__card-icon__i
+                = image_tag 'discover.svg',alt:'discover', width:'32', height:'20'
+          .pay-body__center__under__main__form
+            %label.pay-body__center__under__main__form__label 有効期限
+            %span.pay-body__center__under__main__form__required 必須
+            .pay-body__center__under__main__form__date
+              %input.card_date{:placeholder => "01"}
+                %span 月
+            .pay-body__center__under__main__form__date
+              %input.card_date{:placeholder => "20"}
+                %span 年
+          .pay-body__center__under__main__form
+            %label.pay-body__center__under__main__form__label セキュリティコード
+            %span.pay-body__center__under__main__form__required 必須
+            %input.pay-body__center__under__main__form__text{:placeholder => "カード背面4桁もしくは3桁の番号"}
+              .card-back-side
+                %span.card-back-q
+                  ?
+                カード裏面の番号とは？
+            %button.pay-body__center__under__main__form__next 
+              = link_to "",class:"pay-body__center__under__main__form__next" do
+                .pay-body__center__under__main__form__next__b
+                  次へ進む
+            -# %p.pay-body__center__under__main__form__in ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに公開されることはありません。
+            -# .pay-body__center__under__main__form__right
+            -#   電話番号の確認が必要な理由
+            -#   %i.tel-body__center__under__main__form__right
+            -#     = fa_icon 'chevron-right'   
+  .pay-body__footer
+    = render "items/sub-footer"

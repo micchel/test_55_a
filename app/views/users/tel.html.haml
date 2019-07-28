@@ -1,0 +1,22 @@
+.tel-body
+  .tel-body__header
+    = render "items/sub-header"
+  .tel-body__center
+    .tel-body__center__upper
+      %h2.tel-body__center__upper__check 電話番号の確認
+      .tel-body__center__under
+        .tel-body__center__under__main
+          .tel-body__center__under__main__form
+            %label.tel-body__center__under__main__form__label 携帯電話の番号
+            %input.tel-body__center__under__main__form__input{:placeholder => "携帯電話の番号を入力"}
+            %p.tel-body__center__under__main__form__in 本人確認のため、携帯電話のSMS(ショートメッセージサービス)を利用して認証を行います。
+            %button.tel-body__center__under__main__form__sms SMSを送信する
+            %p.tel-body__center__under__main__form__in ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに公開されることはありません。
+            .tel-body__center__under__main__form__right
+              電話番号の確認が必要な理由
+              %i.tel-body__center__under__main__form__right
+                = fa_icon 'chevron-right'
+  .tel_body__footer
+    = render "items/sub-footer"
+
+%link(rel="stylesheet" href="scss/users-tel.scss")
