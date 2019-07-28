@@ -1,81 +1,113 @@
 .banner
-  .banner__pc
-    .banner__pc__left
-      %h2.banner__pc__left__font
+  .banner-pc
+    .banner-left
+      %h2.banner-left__font
         スマホで簡単フリマアプリ
-      %p.banner__pc__left__font2
+      %p.banner-left__font2
         今すぐ無料ダウンロード！
-      .banner__pc__left__main
-        .banner__pc__left__main__box
-          = image_tag 'mercari_icon.png'
-        .banner__pc__left__main__box2
+      .banner-main
+        .banner-image
+          = image_tag 'mercari_icon.png', class: "banner-image__mercari"
+        .banner-image.image-box2
           = image_tag 'google-play.svg'
           = image_tag 'app-store.svg'
-    .banner__pc__right
-      = image_tag 'download_content_pc.png'
+    .banner-right
+      = image_tag 'download_content_pc.png', class: "banner-right__image"
 
 .footer
   .footer__top
     .footer__top__cell
-      %ul.footer__top__cell__merukari
+      %h2.footer__top__cell__merukari
         メルカリについて
-        %li.footer__top__cell__merukari__font
-          会社概要
-        %li.footer__top__cell__merukari__font
-          採用情報
-        %li.footer__top__cell__merukari__font
-          プレスリリース
-        %li.footer__top__cell__merukari__font
-          公式ブログ
-        %li.footer__top__cell__merukari__font
-          メルカリロゴ利用ガイドライン
-        %li.footer__top__cell__merukari__icon
-          = fa_icon "twitter"
-        %li.footer__top__cell__merukari__icon
-          = fa_icon "facebook-square"
-      %ul.footer__top__cell__help
+      %ul.footer__top__cell__box
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            会社概要
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            採用情報
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            プレスリリース
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            公式ブログ
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            メルカリロゴ利用ガイドライン
+        %li.footer__top__cell__box__font.footer-icon
+          = fa_icon "twitter", class: "footer__top__cell__box__font__icon"
+        %li.footer__top__cell__box__font.footer-icon
+          = fa_icon "facebook-square",class: "footer__top__cell__box__font__icon"
+    .footer__top__cell.footer-help
+      %h2.footer__top__cell__marukari
         ヘルプガイド
-        %li.footer__top__cell__help__font
-          メルカリガイド
-        %li.footer__top__cell__help__font
-          らくらくメルカリ便
-        %li.footer__top__cell__help__font
-          ゆうゆうメルカリ便
-        %li.footer__top__cell__help__font
-          大型メルカリ便
-        %li.footer__top__cell__help__font
-          車体取引ガイド
-        %li.footer__top__cell__help__font
-          メルカリあんしん・あんぜん宣言！
-        %li.footer__top__cell__help__font
-          偽ブランド品撲滅への取り組み
-        %li.footer__top__cell__help__font
-          メルカリボックス
-      %ul.footer__top__cell__rule
+      %ul.footer__top__cell__box
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            メルカリガイド
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            らくらくメルカリ便
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            ゆうゆうメルカリ便
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            大型メルカリ便
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            車体取引ガイド
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            メルカリあんしん・あんぜん宣言！
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            偽ブランド品撲滅への取り組み
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            メルカリボックス
+    .footer__top__cell.footer-long
+      %h2.footer__top__cell__merukari
         プライバシーと利用規約
-        %li.footer__top__cell__rule__font
-          プライバシーポリシー
-        %li.footer__top__cell__rule__font
-          メルカリ利用規約
-        %li.footer__top__cell__rule__font
-          あんしんスマホサポート制度に関する利用特約
-        %li.footer__top__cell__rule__font
-          コンプライアンスポリシー
-      %ul.footer__top__cell__rule2
-        %li.footer__top__cell__rule2__font
-          個人データの安全管理に係る基本方針
-        %li.footer__top__cell__rule2__font
-          特定商取引に関する表記
-        %li.footer__top__cell__rule2__font
-          資金結材方に基づく表示
-        %li.footer__top__cell__rule2__font
-          法令順守と犯罪防止のために
-      %ul.footer__top__cell__country
+      %ul.footer__top__cell__box-long
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            プライバシーポリシー
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            メルカリ利用規約
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            あんしんスマホサポート制度に関する利用特約
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            コンプライアンスポリシー
+      %h2.footer__top__cell__merukari
+      %ul.footer__top__cell__box-long2
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            個人データの安全管理に係る基本方針
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            特定商取引に関する表記
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            資金結材方に基づく表示
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            法令順守と犯罪防止のために
+    .footer__top__cell.country
+      %h2.footer__top__cell__merukari
         国
-        %li.footer__top__cell__country__font
-          日本
-        %li.footer__top__cell__country__font
-          Unigted Staes
+      %ul.footer__top__cell__box
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            日本
+        %li.footer__top__cell__box__font
+          %a.footer__top__cell__box__font__rurl
+            Unigted Staes
   .footer__bottom
+    = image_tag 'logo-white.svg'
     .footer__bottom__text
       © 2019 Mercari

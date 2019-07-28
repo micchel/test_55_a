@@ -3,14 +3,14 @@
   background-position: center;
   background-size: cover;
 
-    &__pc{
+  .banner-pc{
     overflow: hidden;
     position: relative;
     width: 750px;
     height: 260px;
     margin: 0 auto;
     color: #fff;
-      &__left{
+    .banner-left{
       position: absolute;
       top: 50%;
       color: #fff;
@@ -20,24 +20,27 @@
           font-size: 24px;
           margin: 0;
           text-shadow: 0 0 5px rgba(0,0,0,0.4);
+          line-height: 24px;
         }
         &__font2{
+          margin: 10px 0 0;
           font-size: 35px;
           text-shadow: 0 0 5px rgba(0,0,0,0.4);
+          line-height: 35px;
         }
       
-        &__main{
+        .banner-main{
           margin: 20px 0 0;
           height: 68px;
-          &__box{
-          float: left;
-          @include clearfix;
-          img{
-            width: 68px;
-            height: 68px;
+          .banner-image{
+            float: left;
+            @include clearfix;
+            &__mercari{
+              width: 68px;
+              height: 68px;
           }
          }
-          &__box2{
+          .image-box2{
           @include clearfix;
           margin: 14px 0 14px 24px;
           float: left;
@@ -45,14 +48,14 @@
         }
      }
   }
-      &__right{
+      .banner-right{
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       width: 300px;
       height: 100%;
-      img{
+        &__image{
         width: 100%;
       }
     }
@@ -64,80 +67,70 @@
   background: #212121;
   color: #fff;
   display: block;
-    &__top{
-      width: 1020px;
-      margin: 0 auto;
+  &__top{
+    max-width: 1020px;
+    width: 100%;
+    margin: auto;
+    display: flex;
       &__cell{
-      display: flex;
-      &__merukari{
-      color: #fff;
-      font-size: 16px;
-      font-weight: 100;
-      padding: 0 20px 0 0;
-      width: 20%;
-        &__font{
-          font-size: 12px;
-          margin: 14px 0 0;
-          opacity:0.5;
+        padding: 0 20px 0 0;
+        width: 20%;
+        &__merukari{
+          color: #fff;
+          font-size: 16px;
+          font-weight: 100;
         }
-        &__icon{
+        &__box-long{
+          float: left;
+          list-style: none;
+          padding: 0 10px 0 0;
+          vertical-align: top;
+          width: 50%;
+        }
+        &__box-long2{
+          list-style: none;
+        }
+        &__box{
+          list-style: none;
+          &__font{
+            margin: 16px 0 0;
+            &__rurl{
+              font-size: 12px;
+              line-height: 1.5em;
+              opacity: 0.7;
+          }
+          &__icon{
+            font-size: 40px;
+          }
+        }
+        .footer-icon{
           display: inline-block;
-          margin: 14px 0 0;
-          font-size: 30px;
+          width: 40px;
         }
       }
-      &__help{
-        color: #fff;
-        font-size: 16px;
-        font-weight: 100;
-        padding: 0 20px 0 0;
-        &__font{
-          font-size: 12px;
-          margin: 14px 0 0;
-          opacity:0.5;
-        }
+       }
+      .footer-help{
+        width: 23%;
+        padding: 0 40px 0 0;
+        vertical-align: top;
       }
-      &__rule{
-        color: #fff;
-        font-size: 16px;
-        font-weight: 100;
-        padding: 0 20px 0 0;
-        &__font{
-          font-size: 12px;
-          margin: 14px 0 0;
-          opacity:0.5;
-        }
+      .footer-long{
+        padding: 0 40px 0 0;
+        width: 42%;
       }
-      &__rule2{
-        color: #fff;
-        font-size: 16px;
-        font-weight: 100;
-        padding: 20px 0 0;
-        &__font{
-        font-size: 12px;
-        margin: 14px 0 0;
-        opacity:0.5;
-        }
+      .country{
+        width: auto;
       }
-      &__country{
-        color: #fff;
-        font-size: 16px;
-        font-weight: 100;
-        padding: 0 20px 0 ;
-        &__font{
-          font-size: 12px;
-          margin: 14px 0 0;
-          opacity:0.5;
-        }
-      }
-    }
-  }
+   }
   &__bottom{
-  margin: 30px auto 20px;
-  width: 1020px;
+    margin: 30px auto 20px;
+    width: 100%;
+    max-width: 1020px;
     &__text{
-      font-size: 8px;
+      width: 745px;
+      display: inline-block;
       text-align: center;
+      font-size: 12px;
     }
   }
 }
