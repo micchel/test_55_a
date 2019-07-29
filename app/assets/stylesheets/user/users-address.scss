@@ -1,3 +1,18 @@
+.address-body{
+  &__header{
+    height: 128px;
+    text-align: center;
+    .adress-body__header-icon{
+      margin: 40px 0 0;
+      height: 49px;
+      width: 185px;
+      display: inline-block;
+      &:hover{
+        opacity: 0.5 ;
+      }
+    }
+  }
+
 .address-body__center{
   &__upper{
     width: 700px;
@@ -70,18 +85,8 @@
           font-size: 16px;
           padding: 0 15px 0;
         }
+       }
       }
     }
   }
 }
-
-
-
-
-
-
-
-@include sub-header();
-@include sub-footer();
-
-

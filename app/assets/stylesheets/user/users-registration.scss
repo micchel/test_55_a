@@ -10,43 +10,22 @@
   .sign_box-header{
     height: 128px;
     text-align: center;
+    
     .sign_box-header-icon{
       margin: 40px 0 0;
       height: 49px;
       width: 185px;
       display: inline-block;
+      &:hover{
+        opacity: 0.5 ;
+      }
     }
     .sign_box-header-bar{
-      padding: 0 0 0 44px;
+      // padding: 40px 0 0 44px;
       display: inline-block;
       font-weight: 600;
       color: #ea352d;
       list-style: none;
-      height: 52px;
-      width: 552px;
-      &__menu{
-        // margin: 0 0 0 50px;
-        // display: inline-flex;
-        .move-line{
-          width: 508px;
-          height: 12px;
-          background-color: #888;
-          list-style: none;
-          display: flex;
-        }
-        &__move{
-          margin: 0 0 0 20px;
-          height: 12px;
-          width: 60px;
-          .dot{
-            width: 12px;
-            height: 12px;
-            margin: 8px auto 0;
-            border-radius: 50%;
-            background-color: #ea352d;
-          }
-        }
-      }
     }
   }
   .sign_box-center{
@@ -123,7 +102,11 @@
                 background: #fff;
                 line-height: 3;
                 font-size: 16px;
-                border-radius: 4px; 
+                border-radius: 4px;
+                padding-left: 5px;
+                &__a{
+                  margin: 20px;
+                }
               }
               .select-wrap-b{
                 width: 14px;
@@ -146,17 +129,109 @@
             height: 50px;
             text-align: center;
             padding: 10px 0 0 0 ;
-            line-height: 40px;
-            margin: 24px 0 0;
+            line-height: 25px;
           }
           .right{
             text-align: right;
             margin: 24px 0 0;
             color: #0099e8;
           }
+          .right:hover{
+            opacity: 0.5 ;
+            text-decoration: underline;
+          }
         }
       }
     }
   }
-  @include sub-footer();
+  .single-footer {
+    width: 456px;
+    height: 220px;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 40px 0;
+    text-align: center;
+    .single-list{
+      &__footer {
+        font-size: 0;
+        list-style: none;
+        &__one {
+          margin: 0;
+          display: inline-block;
+          font-size: 12px;
+        }
+        &__two {
+          display: inline-block;
+          margin: 0 0 0 16px;
+          font-size: 12px;
+        }
+          .single-list-footer-link {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            touch-action: manipulation;
+          }
+      }
+    }
+    .single-list__link {
+      display: block;
+      color: #333;
+      width: 80px;
+      height: 65px;
+      margin: 40px auto 0;
+      text-decoration: none;
+      touch-action: manipulation;
+      }
+    .single-list__text {
+      margin: 8px 0 0;
+      &__year {
+        font-size: 13px;
+      }
+    }
+  }
 }
+
+.sign_box-center__content__form__in__put__link{
+  color: #0099e8;
+}
+
+.button-next{
+  color: #fff;
+}
+
+.progress-bar{
+  color: #ccc;
+  width: 100px;
+  height:  32px;
+  box-sizing: border-box;
+  &:first-child{
+    color: #ea352d;
+  }
+  &__title{
+    font-size: 12px;
+    font-weight: 600;
+    width:100px;
+    text-align: center;
+  }
+  &__dot{
+    width: 12px;
+    margin: auto;
+    font-size: x-large;
+    &__bar{
+      background-color: #ccc;
+      width: 100px;
+      height: 2px;
+      position: relative;
+      bottom: 10px;
+      left: 5px;
+    }
+  }
+ }
+ .progress-bar-box{
+  height: 60px;
+  box-sizing: border-box;
+  display: inline-flex;
+  vertical-align: top;
+  padding: 40px 0 0 44px;
+  font-size: large;
+ }

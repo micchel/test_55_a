@@ -1,42 +1,20 @@
 @mixin sub-header() {
-  .sign_box-header{
+  .single-header {
     height: 128px;
     text-align: center;
-    .sign_box-header-icon{
+    &__mercari-icon{
+      display: inline-block;
       margin: 40px 0 0;
-      height: 49px;
-      width: 185px;
-      display: inline-block;
-    }
-    .sign_box-header-bar{
-      padding: 0 0 0 44px;
-      display: inline-block;
-      font-weight: 600;
-      color: #ea352d;
-      list-style: none;
-      height: 52px;
-      width: 552px;
-      &__menu{
-        // margin: 0 0 0 50px;
-        // display: inline-flex;
-        .move-line{
-          width: 508px;
-          height: 12px;
-          background-color: #888;
-          list-style: none;
-          display: flex;
-        }
-        &__move{
-          margin: 0 0 0 20px;
-          height: 12px;
-          width: 60px;
-          .dot{
-            width: 12px;
-            height: 12px;
-            margin: 8px auto 0;
-            border-radius: 50%;
-            background-color: #ea352d;
-          }
+      &__link {
+        width: 185px;
+        height: 49px;
+        line-height: 49px;
+        display: inline-block;
+        margin: 0 8px 0 0;
+        &__image {
+          width: 185px;
+          height: 49px;
+          vertical-align: middle
         }
       }
     }
