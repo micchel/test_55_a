@@ -1,34 +1,49 @@
 @mixin sub-footer() {
-  .box-main__footer {
-    height: 220px;
+  .single-footer {
     width: 456px;
+    height: 220px;
     margin: 0 auto;
-    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
     padding: 40px 0;
-    &__top {
-      display: flex;
-      justify-content: center;
-      &__head-line {
-        display: block;
-        font-size: 12px;
-        margin: 0 0 0 10px;
-        color: #333;
-        &--first {
-          display: block;
+    text-align: center;
+    .single-list{
+      &__footer {
+        font-size: 0;
+        list-style: none;
+        &__one {
+          margin: 0;
+          display: inline-block;
           font-size: 12px;
-          color: #333;
         }
+        &__two {
+          display: inline-block;
+          margin: 0 0 0 16px;
+          font-size: 12px;
+        }
+          .single-list-footer-link {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            touch-action: manipulation;
+          }
       }
     }
-    &__img {
-      height: 65px;
-      width: 80px;
-      margin: 40px auto 0;
+    .single-list__link {
       display: block;
-    }
-    &__year {
+      color: #333;
+      width: 80px;
+      height: 65px;
+      margin: 40px auto 0;
+      text-decoration: none;
+      touch-action: manipulation;
+      }
+    .single-list__text {
       margin: 8px 0 0;
-      &__copy-right {
+      &__year {
         font-size: 13px;
       }
     }
