@@ -2,11 +2,10 @@
   float: right;
   width: 700px;
   height: 568px;
-  &__box{
+  &__box {
     width: 700px;
     height: 568px;
     background: #fff;
-
   &__box:first-child {
     margin: 0;
   }
@@ -78,6 +77,6 @@
       text-align: center;
       min-height: 1.5em;
       outline: 0;
-      }
+    }
   }
 }
