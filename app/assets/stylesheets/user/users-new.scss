@@ -2,90 +2,65 @@
   text-decoration: none ;
 }
 
-.body{
-  background-color: #f5f5f5;
-  min-height: 100%;
-  font-size: 14px;
-  line-height: 1;
-  font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
-  height: 789px;
-  .box-main{
-    margin: 0;
-    // padding: 0 0 100px;
-    &__header{
-      height: 128px;
-      .box-main-icon{
-        width: 185px;
-        height: 49px;
-        line-height: 49px;
-        margin: 0 auto;
-        padding: 40px;
+.box-main-content{
+  width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+  height: 344px;
+  &__new{
+    padding: 32px;
+    font-size: 22px;
+    margin: 0 auto;
+  }
+  &__sign_up{
+    padding: 24px 16px 40px;
+    border-top: 1px solid #f5f5f5;
+    line-height: 48px;
+    &__mail{
+      position: relative;
+      background-color: #ea352d;
+      width: 343px;
+      margin: 0 170px 0;
+      color: #fff;  
+      border-radius: 4px;
+      &__icon{
+        position: absolute;
+        font-size: 16px;
+        left: 16px;
+      }
+      
+    }
+    &__face{
+      position: relative;
+      background-color: #385185;
+      width: 343px;
+      margin: 16px 170px 0;
+      color: #fff;
+      border-radius: 4px;
+      &__icon{
+        position: absolute;
+        font-size: 16px;
+        left: 16px;
       }
     }
-    &__center{
-      display: block;
-      // padding: 0 0 110px;
-      .box-main-content{
-        width: 700px;
-        margin: 0 auto;
-        background-color: #fff;
-        text-align: center;
-        height: 344px;
-        &__new{
-          padding: 32px;
-          font-size: 22px;
-          margin: 0 auto;
-        }
-        &__sign_up{
-          padding: 24px 16px 40px;
-          border-top: 1px solid #f5f5f5;
-          line-height: 48px;
-          &__mail{
-            position: relative;
-            background-color: #ea352d;
-            width: 343px;
-            margin: 0 170px 0;
-            color: #fff;  
-            border-radius: 4px;
-            &__icon{
-              position: absolute;
-              font-size: 16px;
-              left: 16px;
-            }
-            
-          }
-          &__face{
-            position: relative;
-            background-color: #385185;
-            width: 343px;
-            margin: 16px 170px 0;
-            color: #fff;
-            border-radius: 4px;
-            &__icon{
-              position: absolute;
-              font-size: 16px;
-              left: 16px;
-            }
-          }
-          &__g{
-            position: relative;
-            width: 343px;
-            margin: 16px 170px 0;
-            border-radius: 4px;
-            border: #979797 solid 1px;
-            &__icon{
-              position: absolute;
-              font-size: 16px;
-              left: 16px;
-            }
-          }
-        }
-      }        
+    &__g{
+      position: relative;
+      width: 343px;
+      margin: 16px 170px 0;
+      border-radius: 4px;
+      border: #979797 solid 1px;
+      &__icon{
+        position: absolute;
+        font-size: 16px;
+        left: 16px;
+      }
     }
-    @include sub-footer();
   }
 }
 
 .links{
   color: #fff;
 }
+
+@include sub-header();
