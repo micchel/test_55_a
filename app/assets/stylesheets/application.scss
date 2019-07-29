@@ -4,22 +4,22 @@
 @import "mixin/sub-footer";
 @import "font-awesome";
 @import "mercari/share";
+@import "main-footer";
+@import "main-header";
+@import "main-top";
 @import "item/exhibition";
 @import "item/item-detail";
+@import "mypage/mypage-top.scss";
+@import "mypage/mypage-profile.scss";
+@import "mypage/side-bar.scss";
+@import "mypage/users-card";
+@import "mypage/users-logout";
 @import "user/users-new";
 @import "user/users-registration";
 @import "user/users-tel";
 @import "user/users-address";
 @import "user/users-pay";
 @import "user/users-done";
-@import "user/users-logout";
-@import "user/mypage-top.scss";
-@import "user/mypage-profile.scss";
-@import "user/side-bar.scss";
-@import "user/users-card";
-@import "main-footer";
-@import "main-header";
-@import "main-top";
 
 
 
