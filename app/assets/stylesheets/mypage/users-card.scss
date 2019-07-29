@@ -20,17 +20,16 @@
     &__link {
       color: #333;
       text-decoration: none;
-    &__action {
-      color: #333;
-      text-decoration: none;
-      font-weight: 600;
-    }
+      &__action {
+        color: #333;
+        text-decoration: none;
+        font-weight: 600;
+      }
       .angle-icon-header {
         margin: 0 8px;
         font-size: 15px;
         color: #888;
         display: inline-block;
-        speak: none;
         font-style: normal;
         font-weight: 900;
         font-variant: normal;
@@ -95,24 +94,24 @@
                   margin-right: 16px;
                 }
               }
-              // &__img{
-              //   width: 49px;
-              //   height: 15px;
-              // }
-              // .card-num{
-              //   margin: 8px 0 0;
-              //   font-size: 16px;
-              // }
-              // .card-delete{
-              //   position: absolute;
-              //   top: 0;
-              //   right: 0;
-              //   padding: 4px 6px;
-              //   background: #fff;
-              //   border-radius: 3px;
-              //   border: 1px solid #ea352d;
-              //   color: #ea352d;
-              // }
+              &__img{
+                width: 49px;
+                height: 15px;
+              }
+              .card-num{
+                margin: 8px 0 0;
+                font-size: 16px;
+              }
+              .card-delete{
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 4px 6px;
+                background: #fff;
+                border-radius: 3px;
+                border: 1px solid #ea352d;
+                color: #ea352d;
+              }
             }
           }
         }
