@@ -1,5 +1,5 @@
 .tel-body{
-  // padding: 0 0 220px;
+  padding: 0 0 220px;
   &__header{
     height: 128px;
     text-align: center;
@@ -71,7 +71,7 @@
       }
     }
   }
- @include sub-footer();
+  @include sub-footer();
 }
 
 .right-t{
