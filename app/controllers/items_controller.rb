@@ -6,9 +6,12 @@ class ItemsController < ApplicationController
   def show
   end
 
-  def new
+  def sell
   end
 
-  def edit
+  def edit_item
+  end
+
+  def buy_confirm
   end
 end
