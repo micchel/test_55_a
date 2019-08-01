@@ -15,4 +15,14 @@ Rails.application.routes.draw do
   get "sell", to: "items#sell"
   get "sell/edit/:id", to: "items#edit_item"
   get "transaction/buy/:id", to: "items#buy_confirm"
+
+  resources :signup do
+    collection do
+      get 'index'
+      get 'new'
+      get 'tel'
+      get 'address' # ここで、入力の全てが終了する
+      get 'done' # 登録完了後のページ
+    end
+  end
 end
